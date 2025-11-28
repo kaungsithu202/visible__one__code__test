@@ -1,0 +1,65 @@
+/* ============
+   Modern CSS Reset
+   ============ */
+
+/* 1. Use border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set base line-height */
+body {
+  line-height: 1.5;
+}
+
+/* 4. Improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 6. Reset links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 7. Make images responsive */
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* 8. Inherit fonts for inputs */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 9. Prevent animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
